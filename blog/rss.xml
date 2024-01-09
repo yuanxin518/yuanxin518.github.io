@@ -4,10 +4,19 @@
         <title>Circkoooooo Blog</title>
         <link>https://yuanxin518.github.io/blog</link>
         <description>Circkoooooo Blog</description>
-        <lastBuildDate>Sat, 23 Dec 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 09 Jan 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-Hans</language>
+        <item>
+            <title><![CDATA[pnpm 安装，报错本地服务异常]]></title>
+            <link>https://yuanxin518.github.io/blog/2024/1/9/ pnpm安装，报错本地服务异常</link>
+            <guid>https://yuanxin518.github.io/blog/2024/1/9/ pnpm安装，报错本地服务异常</guid>
+            <pubDate>Tue, 09 Jan 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[问题]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="问题">问题<a href="#问题" class="hash-link" aria-label="问题的直接链接" title="问题的直接链接">​</a></h2><p>在使用 pnpm 命令的时候，报错下列信息。</p><div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token plain"> WARN  POST http://localhost:5813/requestPackage error (ECONNREFUSED). Will retry in 1 minute. 99 retries left.</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg class="copyButtonIcon_y97N" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="copyButtonSuccessIcon_LjdS" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><h2 class="anchor anchorWithStickyNavbar_LWe7" id="解决">解决<a href="#解决" class="hash-link" aria-label="解决的直接链接" title="解决的直接链接">​</a></h2><p><a href="https://github.com/pnpm/pnpm/issues/4177" target="_blank" rel="noopener noreferrer">https://github.com/pnpm/pnpm/issues/4177</a>
+这是 pnpm 的该解决方案的 issue。</p><p>其中解决方法是：</p><ul><li>macOS 环境下删除<code>~/.pnpm-store/v3/server/server.json</code></li><li>windows 环境下删除<code>%LocalAppData%\pnpm\store\v3\server\server.json</code></li></ul>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[2023-12-23 monorepo下匹配不到ts的问题]]></title>
             <link>https://yuanxin518.github.io/blog/2023/12/23/ monorepo下匹配不到ts的问题</link>
