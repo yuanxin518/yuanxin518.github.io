@@ -39,8 +39,8 @@ const Component =
         return css`
             height: 100px;
             color: ${customColor};
-        `
-    })
+        `;
+    });
 ```
 
 ### 组件传参
@@ -86,8 +86,8 @@ const Component =
         return css`
             height: 100px;
             color: ${customColor};
-        `
-    })
+        `;
+    });
 ```
 
 ```js
